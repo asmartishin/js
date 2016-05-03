@@ -15,3 +15,5 @@ function myParseInt(str) {
         return "NaN";
     }
 }
+
+console.log(myParseInt(process.argv[2]));
