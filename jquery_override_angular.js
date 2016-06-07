@@ -11,8 +11,12 @@ function WaitForLoad(){
 }
 
 function AddButton(){
-    console.log($('.panel-footer')[0]);
-    $('.panel-footer').first().append('<button onclick="AutoDeploy()" class="btn btn-default">Autodeploy</button>');
+    var ticket = window.location.href.split("/").slice(-2, -1);
+    $('.panel-footer').first().append('<button class="btn btn-default" id="autodeploy-btn">Autodeploy</button>');
+    $("#autodeploy-btn").click(function() {
+        console.log('success');
+        $.getJSON('https://foo.bar/?ticket=' + ticket, function(data) {});
+    });
 }
 
 (function() {
