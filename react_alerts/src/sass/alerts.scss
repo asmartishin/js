@@ -1,0 +1,34 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding-left: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#content {
+    height: 100vh;
+    width: 100vw;
+}
+
+#alerts-container {
+    padding: 15px 0px 0px 0px;
+    height: 100%;
+}
+
+#alerts-list {
+    overflow:auto;
+    height: calc(100% - 35px);
+}
+
+.alert {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
